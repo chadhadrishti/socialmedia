@@ -1,0 +1,15 @@
+matplotlib==3.7.1
+nltk==3.8.1
+numpy==1.24.3
+pandas==1.5.3
+plotly==5.14.1
+streamlit==1.25.0
+streamlit-echarts==0.4.0
+wordcloud==1.8.2.2
+openpyxl==3.1.2
+chromadb==0.3.26
+tiktoken==0.4.0
+Chroma==0.2.0
+openai==0.10.2
+langchain==0.0.232
+streamlit-chat==0.0.2.2
