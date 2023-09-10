@@ -136,26 +136,18 @@ def create_wordcloud(text):
 
 
 # Example data
-df = pd.read_csv('new_data.csv')
+df = pd.read_csv('All_Reviews.csv')
+df=df[['Review','Brand']]
+df.columns = ['Review', 'Brand']
 
-df.columns = ['Source', 'Comment', 'Product', 'Date']
-
-# Convert date strings to datetime objects and filter by date
-df['Date'] = pd.to_datetime(df['Date'])
-df = df[df['Date'] >= '2018-01-01']
-
-# Group data by product, source, and quarter
-df['Quarter'] = df['Date'].dt.to_period('Q').astype(str)
-grouped_df = df.groupby(['Product', 'Source', 'Quarter']).size().reset_index(name='Count')
-
-df['Clean_Comment'] = df['Comment'].apply(clean_text)
-topics = pd.read_csv('topic_counts.csv')
+df['Clean_Comment'] = df['Review'].apply(clean_text)
+topics = pd.read_csv('topic_count1.csv')
 topics["Count"] = topics["Topics"].apply(lambda x: int(x.split("(")[-1].split(")")[0]))
 topics["Topics"] = topics["Topics"].apply(lambda x: x.split(" (")[0])
 
 
 def create_bubble_plot(df, product):
-    df_filtered = df[df['Product'] == product]
+    df_filtered = df[df['Brand'] == product]
 
     fig = px.scatter(df_filtered, x="YearQuarter", y="Count", size="Count", text="Topics", color="Topics",
                      title=f"Topics Over Time for Product {product}", height=600, width=1000)
@@ -228,8 +220,8 @@ def donut_chart() -> Pie:
 
 
 # App title and configuration
-st.set_page_config(page_title="Product Analysis", layout="wide", initial_sidebar_state="expanded")
-st.title("Customer Voice Analyzer")
+st.set_page_config(page_title="Automotive Analysis", layout="wide", initial_sidebar_state="expanded")
+st.title("Customer Review Analysis")
 
 # Load data
 # data = pd.read_csv("products.csv")
@@ -237,21 +229,21 @@ st.title("Customer Voice Analyzer")
 
 # Sidebar
 st.sidebar.title("Select a Product")
-products = ['A', 'B']
-product = st.sidebar.selectbox("Choose a product", products)
+products = ['Suzuki', 'Honda','TVS]
+product = st.sidebar.selectbox("Choose a Brand", products)
 # Filter data based on selected product
-filtered_df = grouped_df[grouped_df['Product'] == product]
-filtered_raw_df = df[df['Product'] == product].head(1000)
+filtered_df = grouped_df[grouped_df['Brand'] == product]
+filtered_raw_df = df[df['Brand'] == product].head(1000)
 
 # Get all comments for selected product
-text = ' '.join(df[df['Product'] == product]['Clean_Comment'])
+text = ' '.join(df[df['Brand'] == product]['Clean_Comment'])
 
 # Tabs
 # tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
-#     ["Approach", "Data Exporation", "Topic Analysis", "Market Mix 4Ps", "Competitive Analysis", "Co-Pilot"])
+#     ["Approach", "Data Exporation", "Topic Analysis", "Key Factors", "Competitive Analysis", "Co-Pilot"])
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(
-    ["Approach", "Data Exporation", "Topic Analysis", "Market Mix 4Ps", "Competitive Analysis"])
+    ["Approach", "Data Exporation", "Topic Analysis", "Key Topics", "Competitive Analysis"])
 
 product_data = [
     "Texture and Size",
