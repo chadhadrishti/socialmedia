@@ -137,7 +137,7 @@ def create_wordcloud(text):
 
 # Example data
 df = pd.read_csv('All_Reviews.csv')
-df.columns = ['review', 'Brand']
+df.columns = ['Review', 'Brand']
 
 df['Clean_Comment'] = df['Review'].apply(clean_text)
 topics = pd.read_csv('topic_count1.csv')
