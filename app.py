@@ -306,25 +306,25 @@ with tab1:
 
 with tab2:
     st.subheader("Data Collected For Product Analysis:")
-    filtered_df = grouped_df[grouped_df['Product'] == product]
-    filtered_raw_df1 = df[df['Product'] == product]
-    Amazon_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Amazon'].shape[0]
-    Wallmart_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Wallmart'].shape[0]
-    Target_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Target'].shape[0]
-    Twitter_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Twitter'].shape[0]
+    filtered_df = grouped_df[grouped_df['Brand'] == product]
+    filtered_raw_df1 = df[df['Brand'] == product]
+    # Amazon_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Amazon'].shape[0]
+    # Wallmart_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Wallmart'].shape[0]
+    # Target_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Target'].shape[0]
+    # Twitter_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Twitter'].shape[0]
 
     col11, col22, col33, col44 = st.columns(4)
 
     # st.write("")
     # st.write("")
-    col11.image('Amazon_icon.png', width=50)
-    col11.metric("Amazon", Amazon_count)
-    col22.image('wallmart.png', width=50)
-    col22.metric("Wallmart", Wallmart_count)
-    col33.image('target.png', width=50)
-    col33.metric("Target", Target_count)
-    col44.image('twitter.png', width=50)
-    col44.metric("Twitter", Twitter_count)
+    # col11.image('Amazon_icon.png', width=50)
+    # col11.metric("Amazon", Amazon_count)
+    # col22.image('wallmart.png', width=50)
+    # col22.metric("Wallmart", Wallmart_count)
+    # col33.image('target.png', width=50)
+    # col33.metric("Target", Target_count)
+    # col44.image('twitter.png', width=50)
+    # col44.metric("Twitter", Twitter_count)
 
     st.subheader("Word Cloud")
     if product == 'A':
@@ -348,7 +348,7 @@ with tab3:
     # st.subheader("Topic Data")
     st.subheader("Bubble Plot for Topics Over Time")
 
-    if product == 'A':
+    if product == 'Suzuki':
         # product_a = pd.read_csv('product_a_topics_process.csv')
         # generate_charts(product_a)
         with open("scatter_plotsa.html", "r") as f:
@@ -360,7 +360,16 @@ with tab3:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content_t, height=1000, scrolling=True)
 
-    if product == 'B':
+    if product == 'Honda':
+        with open("scatter_plotsb.html", "r") as f:
+            html_content_b = f.read()
+        # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
+
+        with st.container():
+            # st.write("Marketing Mix Tree")
+            # Display the HTML content in the Streamlit app within the container
+            components.v1.html(html_content_b, height=1000, scrolling=True)
+    if product == 'TVS':
         with open("scatter_plotsb.html", "r") as f:
             html_content_b = f.read()
         # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
@@ -371,11 +380,15 @@ with tab3:
             components.v1.html(html_content_b, height=1000, scrolling=True)
 
     st.subheader("Extracted Topics Over Quarters")
-    if product == 'B':
+    if product == 'Suzuki':
         product_b = pd.read_csv('product_b_topics.csv')
         st.dataframe(product_b)
 
-    if product == 'A':
+    if product == 'Honda':
+        product_a = pd.read_csv('product_a_topics.csv')
+        st.dataframe(product_a)
+
+    if product == 'TVS':
         product_a = pd.read_csv('product_a_topics.csv')
         st.dataframe(product_a)
 
@@ -383,7 +396,7 @@ with tab3:
 
     st.subheader("Topic Insights For Product")
     with st.expander("Click to see insights"):
-        if product == 'B':
+        if product == 'Suzuki':
             st.subheader('Product B:')
             st.subheader('Seasonal trends:')
             st.markdown('''
@@ -411,7 +424,35 @@ with tab3:
             - Topics such as "Communication and Inquiry," "Language and Expressions," and "Prayers and Support" indicate that customers value engaging with the brand and appreciate the support they receive.
             - Discussions around "Shipping and Delivery," "Price and Availability," and "Product Availability" suggest the importance of efficient distribution channels and making products accessible to customers.
             ''')
-        if product == 'A':
+        if product == 'TVS':
+            st.subheader('Product B:')
+            st.subheader('Seasonal trends:')
+            st.markdown('''
+            - Holiday seasons, particularly October to December, show a significant increase in discussions related to chocolate, such as "Holiday Chocolate," "Holidays and Gifting," and "Christmas and New Ways." This indicates a higher demand for chocolate products during these periods.
+            - Conversations around "New and Limited Edition" products peak in October, which suggests that customers might be interested in trying unique flavors and products during the holiday season.
+            ''')
+
+            # Customer preferences
+            st.subheader('Customer preferences:')
+            st.markdown('''
+            - There is a consistent interest in various aspects of chocolate, such as taste, quality, and unique flavors. This implies that maintaining high quality and offering a variety of flavors would help retain customer satisfaction.
+            - Topics related to "size" and "shape" appear multiple times, indicating that customers might appreciate innovative packaging and product designs.
+            ''')
+
+            # Market trends
+            # st.subheader('Market trends:')
+            # st.markdown('''
+            # - The dataset shows a growing interest in the brand's Swiss identity and international presence, suggesting that the company could benefit from expanding its global reach and emphasizing its Swiss heritage in marketing campaigns.
+            # - There is a considerable interest in special editions, limited edition, and new flavors throughout the dataset, indicating that product innovation and variety are essential in capturing the attention of customers.
+            # ''')
+
+            # Customer engagement and support
+            st.subheader('Customer engagement and support:')
+            st.markdown('''
+            - Topics such as "Communication and Inquiry," "Language and Expressions," and "Prayers and Support" indicate that customers value engaging with the brand and appreciate the support they receive.
+            - Discussions around "Shipping and Delivery," "Price and Availability," and "Product Availability" suggest the importance of efficient distribution channels and making products accessible to customers.
+            ''')
+        if product == 'Honda':
             # Seasonal trends
             st.subheader('Product A:')
             st.subheader('Seasonal trends:')
@@ -465,7 +506,7 @@ with tab3:
 with tab4:
     # st.header("4Ps Analysis")
 
-    if product == 'B':
+    if product == 'Suzuki':
         st.subheader('Number of Topics per 4Ps for Product B')
         with open("product_B_piechart.html", "r") as f:
             html_content1 = f.read()
@@ -519,7 +560,58 @@ with tab4:
             2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
             """)
 
-    if product == 'A':
+    if product == 'Honda':
+        st.subheader('Number of Topics per 4Ps for product A')
+        with open("product_A_piechart.html", "r") as f:
+            html_content1 = f.read()
+        # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
+
+        with st.container():
+            # st.write("Marketing Mix Tree")
+            # Display the HTML content in the Streamlit app within the container
+            components.v1.html(html_content1, height=500, scrolling=False)
+
+        with open("new_A_tree.html", "r") as f:
+            html_content = f.read()
+        # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
+        st.subheader('Marketing Mix Tree for Product A')
+        with st.container():
+            # st.write("Marketing Mix Tree")
+            # Display the HTML content in the Streamlit app within the container
+            components.v1.html(html_content, height=800, scrolling=True)
+
+        st.subheader('4Ps Insights')
+        pa1, pa2, pa3, pa4 = st.tabs(["Product", "Price", "Placement", "Promotion"])
+
+        with pa1:
+            # st.title("Product")
+            st.write("""
+            - Topics related to taste, such as "Snack quality," "Freshness and taste," and "Sweet fillings," emphasize the importance of delivering high-quality, flavourful products to satisfy customers.
+            - The variety of products mentioned, such as "Long-lasting," "Double stuffing ," "Coffee flavor," and "Mint and new experiences," indicates a demand for diverse product offerings. The business should continue to innovate and introduce new flavors to keep customers engaged.
+               """)
+
+        with pa2:
+            # st.title("Price")
+            st.write("""
+            - Topics like "Overpriced," "Value for money," "Great purchase," and "Great value" suggest that customers are price-sensitive and appreciate good deals on quality products. The business should consider offering competitive pricing and promotions to attract and retain customers.
+            - The mention of "Double stuffing and price" and "Freshness and price" highlights specific products for which customers are particularly conscious of price. These products may require special attention to pricing strategies and value perception.
+            """)
+
+        with pa3:
+            # st.title("Placement")
+            st.write("""
+            - "Shipping damages," "Freshness and damage," "Family and store," and "Fresh but broken" indicate that efficient and reliable distribution channels are crucial for an excellent customer experience. The business should optimize its shipping and distribution processes to ensure products are delivered promptly and in good condition.
+            - The mention of "Irrelevant" placements suggests the need to assess and optimize product placement to ensure that products are available and easily accessible to customers in the right locations.
+            """)
+
+        with pa4:
+            # st.title("Promotion")
+            st.write("""
+            - Topics related to promotional themes, such as "Kids' favorites," "Christmas treats," and "Birthday cakes and happiness," suggest that tailoring promotional activities to specific events, seasons, or customer segments can create more targeted and effective marketing campaigns.
+            - Customer engagement topics like "Family time," "Love and snack variety," and "Humor and snack time" imply that connecting with customers on a personal level and creating a sense of community around the brand can positively impact customer loyalty and satisfaction.
+            - Negative feedback on "False advertising" indicates the importance of accurate and transparent communication about product features in marketing materials to build trust and maintain customer satisfaction.
+            """)
+    if product == 'TVS':
         st.subheader('Number of Topics per 4Ps for product A')
         with open("product_A_piechart.html", "r") as f:
             html_content1 = f.read()
@@ -572,7 +664,7 @@ with tab4:
             """)
 
 with tab5:
-    select_box = st.multiselect('Choose Product', ['L', 'T', 'K'])
+    select_box = st.multiselect('Choose Product', ['H', 'T', 'K'])
 
     # st.header('Competitive Analysis')
 
