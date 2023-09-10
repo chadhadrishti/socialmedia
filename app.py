@@ -227,10 +227,10 @@ st.title("Customer Review Analysis")
 
 # Sidebar
 st.sidebar.title("Select a Product")
-products = ['Suzuki', 'Honda','TVS']
+products = ['Suzuki','Honda','TVS']
 product = st.sidebar.selectbox("Choose a Brand", products)
 # Filter data based on selected product
-filtered_df = grouped_df[grouped_df['Brand'] == product]
+filtered_df = df[df['Brand'] == product]
 filtered_raw_df = df[df['Brand'] == product].head(1000)
 
 # Get all comments for selected product
