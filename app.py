@@ -141,9 +141,8 @@ df.columns = ['Review', 'Brand']
 
 df['Clean_Comment'] = df['Review'].apply(clean_text)
 topics = pd.read_csv('topic_count1.csv')
-topics["Count"] = topics["Topics"].apply(lambda x: int(x.split("(")[-1].split(")")[0]))
-topics["Topics"] = topics["Topics"].apply(lambda x: x.split(" (")[0])
-
+topics["count"] = topics["count"]
+topics["Topics"] = topics["Subtopic"]
 
 def create_bubble_plot(df, product):
     df_filtered = df[df['Brand'] == product]
