@@ -306,7 +306,7 @@ with tab1:
 
 with tab2:
     st.subheader("Data Collected For Product Analysis:")
-    filtered_df = grouped_df[grouped_df['Brand'] == product]
+    filtered_df = df[df['Brand'] == product]
     filtered_raw_df1 = df[df['Brand'] == product]
     # Amazon_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Amazon'].shape[0]
     # Wallmart_count = filtered_raw_df1[filtered_raw_df1['Source'] == 'Wallmart'].shape[0]
