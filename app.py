@@ -229,7 +229,7 @@ st.title("Customer Review Analysis")
 
 # Sidebar
 st.sidebar.title("Select a Product")
-products = ['Suzuki', 'Honda','TVS]
+products = ['Suzuki', 'Honda','TVS']
 product = st.sidebar.selectbox("Choose a Brand", products)
 # Filter data based on selected product
 filtered_df = grouped_df[grouped_df['Brand'] == product]
