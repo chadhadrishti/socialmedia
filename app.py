@@ -321,10 +321,12 @@ with tab2:
     # col44.metric("Twitter", Twitter_count)
 
     st.subheader("Word Cloud")
-    if product == 'A':
-        st.image('product_a_wordcloud.png', use_column_width=True)
-    if product == 'B':
-        st.image('product_b_wordcloud.png', use_column_width=True)
+    if product == 'Suzuki':
+        st.image('suzuki_wordcloud.png', use_column_width=True)
+    if product == 'Honda':
+        st.image('Honda_wordcloud.png', use_column_width=True)
+    if product == 'TVS':
+        st.image('tvs_wordcloud.png', use_column_width=True)
     # wc = create_wordcloud(text)
     # st.pyplot(plt)
 
