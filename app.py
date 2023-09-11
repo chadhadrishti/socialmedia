@@ -525,8 +525,8 @@ with tab4:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content1, height=500, scrolling=False)
 
-        st.subheader('Marketing Mix Tree for Product B')
-        with open("new_B_tree.html", "r") as f:
+        st.subheader('Automotive Key Factors Tree for Suzuki')
+        with open("tree.html", "r") as f:
             html_content = f.read()
         # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
 
@@ -579,10 +579,10 @@ with tab4:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content1, height=500, scrolling=False)
 
-        with open("new_A_tree.html", "r") as f:
+        with open("tree_honda.html", "r") as f:
             html_content = f.read()
         # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
-        st.subheader('Marketing Mix Tree for Product A')
+            st.subheader('Automotive Key Factors Tree for Honda')
         with st.container():
             # st.write("Marketing Mix Tree")
             # Display the HTML content in the Streamlit app within the container
@@ -630,10 +630,10 @@ with tab4:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content1, height=500, scrolling=False)
 
-        with open("new_A_tree.html", "r") as f:
+        with open("tree_tvs.html", "r") as f:
             html_content = f.read()
         # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
-        st.subheader('Marketing Mix Tree for Product A')
+        st.subheader('Automotive Key Factors Tree for TVS')
         with st.container():
             # st.write("Marketing Mix Tree")
             # Display the HTML content in the Streamlit app within the container
