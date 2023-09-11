@@ -342,38 +342,38 @@ with tab3:
     # tab_t1,tab_t2= st.tabs(["Topic Charts","Actionable Insights"])
 
     # st.subheader("Topic Data")
-    st.subheader("Bubble Plot for Topics Over Time")
+    # st.subheader("Bubble Plot for Topics Over Time")
 
-    if product == 'Suzuki':
-        # product_a = pd.read_csv('product_a_topics_process.csv')
-        # generate_charts(product_a)
-        with open("scatter_plotsa.html", "r") as f:
-            html_content_t = f.read()
-        # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
+    # if product == 'Suzuki':
+    #     # product_a = pd.read_csv('product_a_topics_process.csv')
+    #     # generate_charts(product_a)
+    #     with open("scatter_plotsa.html", "r") as f:
+    #         html_content_t = f.read()
+    #     # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
 
-        with st.container():
-            # st.write("Marketing Mix Tree")
-            # Display the HTML content in the Streamlit app within the container
-            components.v1.html(html_content_t, height=1000, scrolling=True)
+    #     with st.container():
+    #         # st.write("Marketing Mix Tree")
+    #         # Display the HTML content in the Streamlit app within the container
+    #         components.v1.html(html_content_t, height=1000, scrolling=True)
 
-    if product == 'Honda':
-        with open("scatter_plotsb.html", "r") as f:
-            html_content_b = f.read()
-        # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
+    # if product == 'Honda':
+    #     with open("scatter_plotsb.html", "r") as f:
+    #         html_content_b = f.read()
+    #     # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
 
-        with st.container():
-            # st.write("Marketing Mix Tree")
-            # Display the HTML content in the Streamlit app within the container
-            components.v1.html(html_content_b, height=1000, scrolling=True)
-    if product == 'TVS':
-        with open("scatter_plotsb.html", "r") as f:
-            html_content_b = f.read()
-        # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
+    #     with st.container():
+    #         # st.write("Marketing Mix Tree")
+    #         # Display the HTML content in the Streamlit app within the container
+    #         components.v1.html(html_content_b, height=1000, scrolling=True)
+    # if product == 'TVS':
+    #     with open("scatter_plotsb.html", "r") as f:
+    #         html_content_b = f.read()
+    #     # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
 
-        with st.container():
-            # st.write("Marketing Mix Tree")
-            # Display the HTML content in the Streamlit app within the container
-            components.v1.html(html_content_b, height=1000, scrolling=True)
+        # with st.container():
+        #     # st.write("Marketing Mix Tree")
+        #     # Display the HTML content in the Streamlit app within the container
+        #     components.v1.html(html_content_b, height=1000, scrolling=True)
 
     st.subheader("Extracted SubTopics and Topics")
     if product == 'Suzuki':
