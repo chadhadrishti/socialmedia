@@ -297,12 +297,6 @@ with tab1:
         """
     )
 
-    st.subheader("Zero Shot Learning")
-    st.info(
-        """
-        Zero-shot learning is a cutting-edge approach in machine learning where a model can recognize or categorize new, unseen data without requiring any prior training on that specific data. In other words, the model can make predictions or classifications on new information that it has never encountered before, based on its previous learning.
-        """
-    )
 
 with tab2:
     st.subheader("Data Collected For Product Analysis:")
@@ -379,17 +373,17 @@ with tab3:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content_b, height=1000, scrolling=True)
 
-    st.subheader("Extracted Topics Over Quarters")
+    st.subheader("Extracted SubTopics and Topics")
     if product == 'Suzuki':
-        product_b = pd.read_csv('product_b_topics.csv')
+        product_b = pd.read_csv('Suzuki_subtopic_topic.csv')
         st.dataframe(product_b)
 
     if product == 'Honda':
-        product_a = pd.read_csv('product_a_topics.csv')
+        product_a = pd.read_csv('Honda_subtopic_topic.csv')
         st.dataframe(product_a)
 
     if product == 'TVS':
-        product_a = pd.read_csv('product_a_topics.csv')
+        product_a = pd.read_csv('TVS_subtopic_topic.csv')
         st.dataframe(product_a)
 
     # topic_df = pd.DataFrame(data)
