@@ -388,22 +388,26 @@ with tab3:
 
     # topic_df = pd.DataFrame(data)
 
-    st.subheader("Topic Insights For Product")
+    st.subheader("Topic Insights For Brand")
     with st.expander("Click to see insights"):
         if product == 'Suzuki':
-            st.subheader('Product B:')
-            st.subheader('Seasonal trends:')
+            st.subheader('Suzuki:')
+            st.subheader('Likes:')
             st.markdown('''
-            - Holiday seasons, particularly October to December, show a significant increase in discussions related to chocolate, such as "Holiday Chocolate," "Holidays and Gifting," and "Christmas and New Ways." This indicates a higher demand for chocolate products during these periods.
-            - Conversations around "New and Limited Edition" products peak in October, which suggests that customers might be interested in trying unique flavors and products during the holiday season.
-            ''')
+            - Riding Experience and Road Conditions: Riders appreciate the smooth handling and comfortable suspension on various road surfaces.
+            - Vehicle Buying Experience: Positive feedback is received for dealerships with straightforward purchasing processes and friendly sales staff.
+            - Vehicle Maintenance and Component Considerations: Owners like the durability of components and reasonable maintenance costs.
+            - Positive Vehicle Experience and Appreciation: Customers express loyalty to the brand and share memorable riding experiences.
+            - Comfort and Quality of Scooter Seating, particularly for long rides: Owners enjoy comfortable seating and ergonomic design for extended journeys.''')
 
             # Customer preferences
-            st.subheader('Customer preferences:')
+            st.subheader('Dislikes:')
             st.markdown('''
-            - There is a consistent interest in various aspects of chocolate, such as taste, quality, and unique flavors. This implies that maintaining high quality and offering a variety of flavors would help retain customer satisfaction.
-            - Topics related to "size" and "shape" appear multiple times, indicating that customers might appreciate innovative packaging and product designs.
-            ''')
+            - Vehicle Starting Issues and Engine Problems: Some users report occasional starting problems and engine issues, which can be frustrating.
+            - Vehicle Body and Design Considerations: There are dislikes related to limited color options and outdated design in certain models.
+            - Mileage and Scooter Comparison, with emphasis on Honda Activa: Some customers are disappointed by lower-than-expected mileage and unfavorable comparisons with Honda Activa.
+            - Issues and Experiences with Scooter Service and Performance: Negative experiences are reported, including frequent service visits and unresolved problems.
+            - Features and Buying Considerations: Some buyers express disappointment with limited feature choices and uninformed purchases.''')
 
             # Market trends
             # st.subheader('Market trends:')
@@ -412,26 +416,30 @@ with tab3:
             # - There is a considerable interest in special editions, limited edition, and new flavors throughout the dataset, indicating that product innovation and variety are essential in capturing the attention of customers.
             # ''')
 
-            # Customer engagement and support
-            st.subheader('Customer engagement and support:')
-            st.markdown('''
-            - Topics such as "Communication and Inquiry," "Language and Expressions," and "Prayers and Support" indicate that customers value engaging with the brand and appreciate the support they receive.
-            - Discussions around "Shipping and Delivery," "Price and Availability," and "Product Availability" suggest the importance of efficient distribution channels and making products accessible to customers.
-            ''')
+            # # Customer engagement and support
+            # st.subheader('Customer engagement and support:')
+            # st.markdown('''
+            # - Topics such as "Communication and Inquiry," "Language and Expressions," and "Prayers and Support" indicate that customers value engaging with the brand and appreciate the support they receive.
+            # - Discussions around "Shipping and Delivery," "Price and Availability," and "Product Availability" suggest the importance of efficient distribution channels and making products accessible to customers.
+            # ''')
         if product == 'TVS':
-            st.subheader('Product B:')
-            st.subheader('Seasonal trends:')
+            st.subheader('Likes:')
             st.markdown('''
-            - Holiday seasons, particularly October to December, show a significant increase in discussions related to chocolate, such as "Holiday Chocolate," "Holidays and Gifting," and "Christmas and New Ways." This indicates a higher demand for chocolate products during these periods.
-            - Conversations around "New and Limited Edition" products peak in October, which suggests that customers might be interested in trying unique flavors and products during the holiday season.
-            ''')
+            - Maximizing the Value of Your Motorcycle: Riders appreciate motorcycles that offer superb power, great rides, and smart money choices.
+            - Indian Motorcycle Machines: Enthusiasts enjoy the journey of feel, the competitive pricing, and the riding pleasure that Indian motorcycles provide.
+            - Striking the Perfect Balance in Motorcycle Ownership: Riders value motorcycles that offer good rides, ideal prices, and strong performance, indicating a desire for well-rounded options.
+            - Unleashing Awesome Rides and Sporty Looks: Motorcycle enthusiasts favor motorcycles that offer exciting rides and sporty aesthetics.
+            - The Scooter Revolution: Riders appreciate fuel efficiency, stylish rides, and positive rider experiences when it comes to scooters.''')
+
 
             # Customer preferences
-            st.subheader('Customer preferences:')
+            st.subheader('Dislikes:')
             st.markdown('''
-            - There is a consistent interest in various aspects of chocolate, such as taste, quality, and unique flavors. This implies that maintaining high quality and offering a variety of flavors would help retain customer satisfaction.
-            - Topics related to "size" and "shape" appear multiple times, indicating that customers might appreciate innovative packaging and product designs.
-            ''')
+            - Navigating Service Challenges and Making Informed Buying Decisions: Some riders express frustration with service challenges, and there is a need for better information to make informed buying decisions.
+            - Troubleshooting Vehicle Issues, Starting Strong, and Self-Improvement: Riders face challenges with troubleshooting vehicle issues and starting problems, which can be seen as negative experiences.
+            - The Art of Riding: There are concerns or dislikes related to aspects of motorcycle aesthetics or style.
+            - Elevating the Scooter Experience: Some riders may have reservations about the scooter experience, possibly due to expectations of greater innovation.
+            - Navigating the World of Motorcycle Ownership: Negative experiences are reported, including challenges with service, maintenance, and the overall rider's journey.''')
 
             # Market trends
             # st.subheader('Market trends:')
@@ -440,20 +448,22 @@ with tab3:
             # - There is a considerable interest in special editions, limited edition, and new flavors throughout the dataset, indicating that product innovation and variety are essential in capturing the attention of customers.
             # ''')
 
-            # Customer engagement and support
-            st.subheader('Customer engagement and support:')
-            st.markdown('''
-            - Topics such as "Communication and Inquiry," "Language and Expressions," and "Prayers and Support" indicate that customers value engaging with the brand and appreciate the support they receive.
-            - Discussions around "Shipping and Delivery," "Price and Availability," and "Product Availability" suggest the importance of efficient distribution channels and making products accessible to customers.
-            ''')
+            # # Customer engagement and support
+            # st.subheader('Customer engagement and support:')
+            # st.markdown('''
+            # - Topics such as "Communication and Inquiry," "Language and Expressions," and "Prayers and Support" indicate that customers value engaging with the brand and appreciate the support they receive.
+            # - Discussions around "Shipping and Delivery," "Price and Availability," and "Product Availability" suggest the importance of efficient distribution channels and making products accessible to customers.
+            # ''')
         if product == 'Honda':
             # Seasonal trends
-            st.subheader('Product A:')
-            st.subheader('Seasonal trends:')
+            st.subheader('Honda:')
+            st.subheader('Likes:')
             st.markdown('''
-            - In Q4 there is a significant increase in discussions around "Christmas Treats", "New Experiences" and "Festive", suggesting a higher demand for themed or seasonal flavors during specific times of the year. 
-            - The data suggests Product A is also strongly associated with themes around “Family”, “Party” and “Sharing” which implies that the business could benefit from offering products in family packs, suitable for gatherings and special occasions. 
-            ''')
+            - Comparing the Honda Activa's Engine and Riding Experience: Enthusiasts appreciate the comparison of engine performance and riding experience, seeking information to make informed choices.
+            - Exploring the Best Features and Colors for an Awesome and Comfortable Ride: Riders value information on features and colors that enhance the comfort and enjoyment of their motorcycle experience.
+            - Maximizing Mileage and Performance: Riders seek tips on improving engine efficiency, lighting, and smooth riding to enhance their overall motorcycle experience.
+            - Awesome Look and Affordable Price Range of Honda Motorcycles: Buyers appreciate the combination of attractive design and affordability in Honda motorcycles.
+            - Choosing the Perfect Scooty: Prospective buyers are interested in factors to consider when making a scooter purchase, indicating a desire for informed decision-making. ''')
 
             # Product preferences and quality
             # st.subheader('Product preferences and quality:')
@@ -463,17 +473,21 @@ with tab3:
             # ''')
 
             # Customer engagement and feedback
-            st.subheader('Customer engagement and feedback:')
+            st.subheader('Dislikes:')
             st.markdown('''
-            - Topics like "Misleading Advertising" and "False Advertising" suggest that the business should ensure clear and accurate communication about product features to avoid negative customer experiences and feedback.
-            - "Value for Money," "Great Value," and "Freshness and Price" indicate that customers are price-sensitive and appreciate products that offer good quality at reasonable prices.
-            ''')
+            - Honda Scooter Ownership: Some riders may face challenges and common problems with Honda scooters, suggesting potential negative experiences.
+            - Powerful and Attractive Commuter Bikes: There may be concerns or dislikes related to commuter bikes in terms of performance or styling.
+            - Troubleshooting Common Motorcycle Problems: Riders encounter issues related to mileage, speed, and engine performance, which can be seen as negative experiences.
+            - Optimizing Your Honda Motorcycle Service Experience: Riders may have concerns about managing service costs and maintenance, potentially reflecting negative aspects of the ownership experience.
+            - Honda Motorcycle Gear Shift Issues: Some riders may experience gear shift problems, impacting the smoothness of their rides.
 
-            # Product variety and innovation
-            st.subheader('Customer preferences:')
-            st.markdown('''
-            - Topics like "Kids' Favorites," "Students and Taste", "Snacks ", and "Great for Lunch" show that different customer segments have specific preferences, and the business should consider tailoring its product offerings to cater to these diverse needs. 
-            ''')
+''')
+
+            # # Product variety and innovation
+            # st.subheader('Customer preferences:')
+            # st.markdown('''
+            # - Topics like "Kids' Favorites," "Students and Taste", "Snacks ", and "Great for Lunch" show that different customer segments have specific preferences, and the business should consider tailoring its product offerings to cater to these diverse needs. 
+            # ''')
 
     # st.header("Sunburst Chart")
     # sunburst_chart = create_sunburst_chart()
