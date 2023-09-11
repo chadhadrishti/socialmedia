@@ -537,11 +537,11 @@ with tab4:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content, height=800, scrolling=True)
 
-        st.subheader('4Ps Insights')
-        pb1, pb2, pb3, pb4 = st.tabs(["Product", "Price", "Placement", "Promotion"])
+        st.subheader('Key Factors Insights')
+        pb1, pb2, pb3, pb4,pb5,pb6,pb7 = st.tabs(["Body / Design / Looks/ Style","Engine / Performance / Speed","Service & Maintenance","Special Feature, New feature","Competittion","Ride experience / Comfortability","Price, Cost, Buying"])
 
         with pb1:
-            # st.title("Product")
+            # st.title("Body")
             st.write("""
             1. There is a wide variety of topics related to product attributes, such as taste, size, shape, quality, and flavors. This suggests that customers appreciate diversity in products, and the business should continue to innovate and introduce new flavors and combinations.
             2. The association with country of origin, culture and importance of quality is highlighted several times, emphasizing the value of maintaining and promoting the brand's origin and reputation. 
@@ -549,22 +549,43 @@ with tab4:
             """)
 
         with pb2:
-            st.title("Price")
+            # st.title("Engine")
             st.write("""
             1. "Price and Availability" and "Inflation and Economy" suggest that customers are price-sensitive and might be affected by economic factors. The business should consider offering a range of products at various price points to cater to different customer segments.
             2. "Great Purchase" implies that customers value deals and promotions, so the business should consider running special offers and discounts to attract and retain customers.
             """)
 
-        with pb4:
-            # st.title("Promotion")
+        with pb3:
+            # st.title("service")
             st.write("""
             1. A variety of promotional topics are mentioned, including events, celebrations, special occasions, and holidays. This suggests that the business should align its promotional activities with these events to create more targeted and effective marketing campaigns.
             2. Topics related to communication, engagement, and language highlight the importance of connecting with customers in a personalized and culturally relevant manner. This could involve using local languages in marketing materials and engaging with customers on social media platforms.
             3. The interest in branding and logo, Swiss identity, and brand history implies that the brand's story and heritage play a significant role in customer perception. The company should continue to emphasize its unique selling propositions and values in its promotional materials.
             """)
 
-        with pb3:
-            # st.title("Placement")
+        with pb4:
+            # st.title("special feature")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+
+        with pb5:
+            # st.title("competition")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+            
+        with pb6:
+            # st.title("ride experience")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+
+        with pb7:
+            # st.title("price")
             st.write("""
             1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
             2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
@@ -590,36 +611,58 @@ with tab4:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content, height=800, scrolling=True)
 
-        st.subheader('4Ps Insights')
-        pa1, pa2, pa3, pa4 = st.tabs(["Product", "Price", "Placement", "Promotion"])
+        st.subheader('Key Factors Insights')
+        pa1, pa2, pa3, pa4, pa5, pa6, pa7 = st.tabs(["Body / Design / Looks/ Style","Engine / Performance / Speed","Service & Maintenance","Special Feature, New feature","Competittion","Ride experience / Comfortability","Price, Cost, Buying"])
 
-        with pa1:
-            # st.title("Product")
+        with pb1:
+            # st.title("Body")
             st.write("""
-            - Topics related to taste, such as "Snack quality," "Freshness and taste," and "Sweet fillings," emphasize the importance of delivering high-quality, flavourful products to satisfy customers.
-            - The variety of products mentioned, such as "Long-lasting," "Double stuffing ," "Coffee flavor," and "Mint and new experiences," indicates a demand for diverse product offerings. The business should continue to innovate and introduce new flavors to keep customers engaged.
-               """)
-
-        with pa2:
-            # st.title("Price")
-            st.write("""
-            - Topics like "Overpriced," "Value for money," "Great purchase," and "Great value" suggest that customers are price-sensitive and appreciate good deals on quality products. The business should consider offering competitive pricing and promotions to attract and retain customers.
-            - The mention of "Double stuffing and price" and "Freshness and price" highlights specific products for which customers are particularly conscious of price. These products may require special attention to pricing strategies and value perception.
+            1. There is a wide variety of topics related to product attributes, such as taste, size, shape, quality, and flavors. This suggests that customers appreciate diversity in products, and the business should continue to innovate and introduce new flavors and combinations.
+            2. The association with country of origin, culture and importance of quality is highlighted several times, emphasizing the value of maintaining and promoting the brand's origin and reputation. 
+            3. Topics related to ingredients and allergens indicate the need for clear labeling and communication of product contents to cater to diverse customer needs and preferences.
             """)
 
-        with pa3:
-            # st.title("Placement")
+        with pb2:
+            # st.title("Engine")
             st.write("""
-            - "Shipping damages," "Freshness and damage," "Family and store," and "Fresh but broken" indicate that efficient and reliable distribution channels are crucial for an excellent customer experience. The business should optimize its shipping and distribution processes to ensure products are delivered promptly and in good condition.
-            - The mention of "Irrelevant" placements suggests the need to assess and optimize product placement to ensure that products are available and easily accessible to customers in the right locations.
+            1. "Price and Availability" and "Inflation and Economy" suggest that customers are price-sensitive and might be affected by economic factors. The business should consider offering a range of products at various price points to cater to different customer segments.
+            2. "Great Purchase" implies that customers value deals and promotions, so the business should consider running special offers and discounts to attract and retain customers.
             """)
 
-        with pa4:
-            # st.title("Promotion")
+        with pb3:
+            # st.title("service")
             st.write("""
-            - Topics related to promotional themes, such as "Kids' favorites," "Christmas treats," and "Birthday cakes and happiness," suggest that tailoring promotional activities to specific events, seasons, or customer segments can create more targeted and effective marketing campaigns.
-            - Customer engagement topics like "Family time," "Love and snack variety," and "Humor and snack time" imply that connecting with customers on a personal level and creating a sense of community around the brand can positively impact customer loyalty and satisfaction.
-            - Negative feedback on "False advertising" indicates the importance of accurate and transparent communication about product features in marketing materials to build trust and maintain customer satisfaction.
+            1. A variety of promotional topics are mentioned, including events, celebrations, special occasions, and holidays. This suggests that the business should align its promotional activities with these events to create more targeted and effective marketing campaigns.
+            2. Topics related to communication, engagement, and language highlight the importance of connecting with customers in a personalized and culturally relevant manner. This could involve using local languages in marketing materials and engaging with customers on social media platforms.
+            3. The interest in branding and logo, Swiss identity, and brand history implies that the brand's story and heritage play a significant role in customer perception. The company should continue to emphasize its unique selling propositions and values in its promotional materials.
+            """)
+
+        with pb4:
+            # st.title("special feature")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+
+        with pb5:
+            # st.title("competition")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+            
+        with pb6:
+            # st.title("ride experience")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+
+        with pb7:
+            # st.title("price")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
             """)
     if product == 'TVS':
         st.subheader('Number of Topics per Key Factors for TVS')
@@ -641,36 +684,58 @@ with tab4:
             # Display the HTML content in the Streamlit app within the container
             components.v1.html(html_content, height=800, scrolling=True)
 
-        st.subheader('4Ps Insights')
-        pa1, pa2, pa3, pa4 = st.tabs(["Product", "Price", "Placement", "Promotion"])
+        st.subheader('Key Factors Insights')
+        pa1, pa2, pa3, pa4, pa5, pa6, pa7 = st.tabs(["Body / Design / Looks/ Style","Engine / Performance / Speed","Service & Maintenance","Special Feature, New feature","Competittion","Ride experience / Comfortability","Price, Cost, Buying"])
 
-        with pa1:
-            # st.title("Product")
+        with pb1:
+            # st.title("Body")
             st.write("""
-            - Topics related to taste, such as "Snack quality," "Freshness and taste," and "Sweet fillings," emphasize the importance of delivering high-quality, flavourful products to satisfy customers.
-            - The variety of products mentioned, such as "Long-lasting," "Double stuffing ," "Coffee flavor," and "Mint and new experiences," indicates a demand for diverse product offerings. The business should continue to innovate and introduce new flavors to keep customers engaged.
-               """)
-
-        with pa2:
-            # st.title("Price")
-            st.write("""
-            - Topics like "Overpriced," "Value for money," "Great purchase," and "Great value" suggest that customers are price-sensitive and appreciate good deals on quality products. The business should consider offering competitive pricing and promotions to attract and retain customers.
-            - The mention of "Double stuffing and price" and "Freshness and price" highlights specific products for which customers are particularly conscious of price. These products may require special attention to pricing strategies and value perception.
+            1. There is a wide variety of topics related to product attributes, such as taste, size, shape, quality, and flavors. This suggests that customers appreciate diversity in products, and the business should continue to innovate and introduce new flavors and combinations.
+            2. The association with country of origin, culture and importance of quality is highlighted several times, emphasizing the value of maintaining and promoting the brand's origin and reputation. 
+            3. Topics related to ingredients and allergens indicate the need for clear labeling and communication of product contents to cater to diverse customer needs and preferences.
             """)
 
-        with pa3:
-            # st.title("Placement")
+        with pb2:
+            # st.title("Engine")
             st.write("""
-            - "Shipping damages," "Freshness and damage," "Family and store," and "Fresh but broken" indicate that efficient and reliable distribution channels are crucial for an excellent customer experience. The business should optimize its shipping and distribution processes to ensure products are delivered promptly and in good condition.
-            - The mention of "Irrelevant" placements suggests the need to assess and optimize product placement to ensure that products are available and easily accessible to customers in the right locations.
+            1. "Price and Availability" and "Inflation and Economy" suggest that customers are price-sensitive and might be affected by economic factors. The business should consider offering a range of products at various price points to cater to different customer segments.
+            2. "Great Purchase" implies that customers value deals and promotions, so the business should consider running special offers and discounts to attract and retain customers.
             """)
 
-        with pa4:
-            # st.title("Promotion")
+        with pb3:
+            # st.title("service")
             st.write("""
-            - Topics related to promotional themes, such as "Kids' favorites," "Christmas treats," and "Birthday cakes and happiness," suggest that tailoring promotional activities to specific events, seasons, or customer segments can create more targeted and effective marketing campaigns.
-            - Customer engagement topics like "Family time," "Love and snack variety," and "Humor and snack time" imply that connecting with customers on a personal level and creating a sense of community around the brand can positively impact customer loyalty and satisfaction.
-            - Negative feedback on "False advertising" indicates the importance of accurate and transparent communication about product features in marketing materials to build trust and maintain customer satisfaction.
+            1. A variety of promotional topics are mentioned, including events, celebrations, special occasions, and holidays. This suggests that the business should align its promotional activities with these events to create more targeted and effective marketing campaigns.
+            2. Topics related to communication, engagement, and language highlight the importance of connecting with customers in a personalized and culturally relevant manner. This could involve using local languages in marketing materials and engaging with customers on social media platforms.
+            3. The interest in branding and logo, Swiss identity, and brand history implies that the brand's story and heritage play a significant role in customer perception. The company should continue to emphasize its unique selling propositions and values in its promotional materials.
+            """)
+
+        with pb4:
+            # st.title("special feature")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+
+        with pb5:
+            # st.title("competition")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+            
+        with pb6:
+            # st.title("ride experience")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            """)
+
+        with pb7:
+            # st.title("price")
+            st.write("""
+            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
+            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
             """)
 
 with tab5:
