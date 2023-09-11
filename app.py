@@ -612,7 +612,7 @@ with tab4:
             components.v1.html(html_content, height=800, scrolling=True)
 
         st.subheader('Key Factors Insights')
-        pa1, pa2, pa3, pa4, pa5, pa6, pa7 = st.tabs(["Body / Design / Looks/ Style","Engine / Performance / Speed","Service & Maintenance","Special Feature, New feature","Competittion","Ride experience / Comfortability","Price, Cost, Buying"])
+        pb1, pb2, pb3, pb4,pb5,pb6,pb7 = st.tabs(["Body / Design / Looks/ Style","Engine / Performance / Speed","Service & Maintenance","Special Feature, New feature","Competittion","Ride experience / Comfortability","Price, Cost, Buying"])
 
         with pb1:
             # st.title("Body")
@@ -664,6 +664,7 @@ with tab4:
             1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
             2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
             """)
+            
     if product == 'TVS':
         st.subheader('Number of Topics per Key Factors for TVS')
         with open("tvs_piechart.html", "r") as f:
@@ -685,7 +686,7 @@ with tab4:
             components.v1.html(html_content, height=800, scrolling=True)
 
         st.subheader('Key Factors Insights')
-        pa1, pa2, pa3, pa4, pa5, pa6, pa7 = st.tabs(["Body / Design / Looks/ Style","Engine / Performance / Speed","Service & Maintenance","Special Feature, New feature","Competittion","Ride experience / Comfortability","Price, Cost, Buying"])
+        pb1, pb2, pb3, pb4,pb5,pb6,pb7 = st.tabs(["Body / Design / Looks/ Style","Engine / Performance / Speed","Service & Maintenance","Special Feature, New feature","Competittion","Ride experience / Comfortability","Price, Cost, Buying"])
 
         with pb1:
             # st.title("Body")
