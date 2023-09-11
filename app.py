@@ -517,8 +517,8 @@ with tab4:
     # st.header("4Ps Analysis")
 
     if product == 'Suzuki':
-        st.subheader('Number of Topics per 4Ps for Product B')
-        with open("product_B_piechart.html", "r") as f:
+        st.subheader('Number of Topics per Key Factors for Suzuki')
+        with open("suzuki_piechart.html", "r") as f:
             html_content1 = f.read()
         # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
 
@@ -571,8 +571,8 @@ with tab4:
             """)
 
     if product == 'Honda':
-        st.subheader('Number of Topics per 4Ps for product A')
-        with open("product_A_piechart.html", "r") as f:
+        st.subheader('Number of Topics per Key Factors for Honda')
+        with open("honda_piechart.html", "r") as f:
             html_content1 = f.read()
         # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
 
@@ -622,8 +622,8 @@ with tab4:
             - Negative feedback on "False advertising" indicates the importance of accurate and transparent communication about product features in marketing materials to build trust and maintain customer satisfaction.
             """)
     if product == 'TVS':
-        st.subheader('Number of Topics per 4Ps for product A')
-        with open("product_A_piechart.html", "r") as f:
+        st.subheader('Number of Topics per Key Factors for TVS')
+        with open("tvs_piechart.html", "r") as f:
             html_content1 = f.read()
         # components.v1.html(html_content, width=1200, height=3000, scrolling=True)
 
