@@ -1051,56 +1051,56 @@ with tab5:
     # # col3.metric("Lotus", st.image(image3, width=10))
     # # col4.metric("Keebler", st.image(image4, width=10))
 
-    st.subheader('Subtopics across certain P')
+    # st.subheader('Subtopics across certain P')
 
-    ore = pd.read_excel('compete.xlsx', sheet_name=6)
-    select_p = st.selectbox('Choose P', ['Product', 'Price', 'Promotion', 'Placement'])
-    val = []
-    p_dict = {}
-    for i in select_p:
-        val.append(i)
-    print(val)
-    if len(val) == 0:
-        pass
-    else:
-        temp = ''.join(str(i) for i in val)
-        print(temp)
-        if temp == 'Product':
-            p_dict = {'A': ore['Product'],
-                      'L': lt['Product'],
-                      'K': kb['Product'],
-                      'T': tj['Product']}
+    # ore = pd.read_excel('compete.xlsx', sheet_name=6)
+    # select_p = st.selectbox('Choose P', ['Product', 'Price', 'Promotion', 'Placement'])
+    # val = []
+    # p_dict = {}
+    # for i in select_p:
+    #     val.append(i)
+    # print(val)
+    # if len(val) == 0:
+    #     pass
+    # else:
+    #     temp = ''.join(str(i) for i in val)
+    #     print(temp)
+    #     if temp == 'Product':
+    #         p_dict = {'A': ore['Product'],
+    #                   'L': lt['Product'],
+    #                   'K': kb['Product'],
+    #                   'T': tj['Product']}
 
-            val_df = pd.DataFrame(p_dict)
-            val_df.dropna(axis=0, how='all', inplace=True)
-            st.write(val_df)
-        elif temp == 'Price':
-            p_dict = {'A': ore['Price'],
-                      'L': lt['Price'],
-                      'K': kb['Price'],
-                      'T': tj['Price']}
+    #         val_df = pd.DataFrame(p_dict)
+    #         val_df.dropna(axis=0, how='all', inplace=True)
+    #         st.write(val_df)
+    #     elif temp == 'Price':
+    #         p_dict = {'A': ore['Price'],
+    #                   'L': lt['Price'],
+    #                   'K': kb['Price'],
+    #                   'T': tj['Price']}
 
-            val_df = pd.DataFrame(p_dict)
-            val_df.dropna(axis=0, how='all', inplace=True)
-            st.write(val_df)
-        elif temp == 'Promotion':
-            p_dict = {'A': ore['Promotion'],
-                      'L': lt['Promotion'],
-                      'K': kb['Promotion'],
-                      'T': tj['Promotion']}
+    #         val_df = pd.DataFrame(p_dict)
+    #         val_df.dropna(axis=0, how='all', inplace=True)
+    #         st.write(val_df)
+    #     elif temp == 'Promotion':
+    #         p_dict = {'A': ore['Promotion'],
+    #                   'L': lt['Promotion'],
+    #                   'K': kb['Promotion'],
+    #                   'T': tj['Promotion']}
 
-            val_df = pd.DataFrame(p_dict)
-            val_df.dropna(axis=0, how='all', inplace=True)
-            st.write(val_df)
-        else:
-            p_dict = {'A': ore['Placement'],
-                      'L': lt['Placement'],
-                      'K': kb['Placement'],
-                      'T': tj['Placement']}
+    #         val_df = pd.DataFrame(p_dict)
+    #         val_df.dropna(axis=0, how='all', inplace=True)
+    #         st.write(val_df)
+    #     else:
+    #         p_dict = {'A': ore['Placement'],
+    #                   'L': lt['Placement'],
+    #                   'K': kb['Placement'],
+    #                   'T': tj['Placement']}
 
-            val_df = pd.DataFrame(p_dict)
-            val_df.dropna(axis=0, how='all', inplace=True)
-            st.write(val_df)
+    #         val_df = pd.DataFrame(p_dict)
+    #         val_df.dropna(axis=0, how='all', inplace=True)
+    #         st.write(val_df)
 
 # with tab6:
 #     # select_box = st.multiselect('Choose Product you want to query about', ['A','B' 'L', 'T', 'K'])
