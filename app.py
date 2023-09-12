@@ -784,6 +784,7 @@ with tab5:
     # col22.metric("Wallmart", Wallmart_count)
     col3.image('tvs_logo.png', width=200)
     col1.metric("Suzuki", 7385)
+    col2.metric("", )
     col2.metric("Honda", 1846)
     col3.metric("TVS", 1033)
     # col4.metric("K", 3808)
