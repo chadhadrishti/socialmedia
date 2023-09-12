@@ -290,7 +290,7 @@ with tab1:
 
     st.write("")
     st.write("")
-    st.header('Brands Considered:')
+    # st.header('Brands Considered:')
     col11.image('suzuki_logo.png', width=200)
     # col11.metric("Amazon", Amazon_count)
     col22.image('Honda_logo.png', width=200)
