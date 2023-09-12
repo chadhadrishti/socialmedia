@@ -285,6 +285,20 @@ button[data-baseweb="tab"] > div[data-testid="stMarkdownContainer"] > p {
 st.write(font_css, unsafe_allow_html=True)
 
 with tab1:
+    
+    col11, col22, col33 = st.columns(4)
+
+    st.write("")
+    st.write("")
+    st.header('Brands Considered:')
+    col11.image('suzuki_logo.png', width=50)
+    # col11.metric("Amazon", Amazon_count)
+    col22.image('Honda_logo.jpeg', width=50)
+    # col22.metric("Wallmart", Wallmart_count)
+    col33.image('tvs_logo.png', width=50)
+    # col33.metric("Target", Target_count)
+    # col44.image('twitter.png', width=50)
+    # col44.metric("Twitter", Twitter_count)
     st.image('approach1.png', use_column_width=True)
 
     st.header('Machine Learning Techniques Used:')
