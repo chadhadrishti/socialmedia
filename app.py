@@ -884,31 +884,31 @@ with tab5:
             elif metric_key == 'Neutral':
                 metric_value = f'<span style="color:orange;">{metric_value}</span>'
             st.markdown(f'{metric_key}: {metric_value}', unsafe_allow_html=True)
-    with col4:
-        st.subheader("K")
-        emo_dict = {
-            "Positive": str(k_pos) + "%",
-            "Neutral": str(k_neu) + "%",
-            "Negative": str(k_neg) + "%"
-        }
-        metrics = list(emo_dict.items())
+    # with col4:
+    #     st.subheader("K")
+    #     emo_dict = {
+    #         "Positive": str(k_pos) + "%",
+    #         "Neutral": str(k_neu) + "%",
+    #         "Negative": str(k_neg) + "%"
+    #     }
+    #     metrics = list(emo_dict.items())
 
-        # Display each metric using st.metric
-        # for metric in metrics:
-        #     st.metric(metric[0], metric[1])
+    #     # Display each metric using st.metric
+    #     # for metric in metrics:
+    #     #     st.metric(metric[0], metric[1])
 
-        for metric_key, metric_value in emo_dict.items():
-            if metric_key == 'Negative':
-                metric_value = f'<span style="color:red;">{metric_value}</span>'
-            elif metric_key == 'Positive':
-                metric_value = f'<span style="color:green;">{metric_value}</span>'
-            elif metric_key == 'Neutral':
-                metric_value = f'<span style="color:orange;">{metric_value}</span>'
-            st.markdown(f'{metric_key}: {metric_value}', unsafe_allow_html=True)
+    #     for metric_key, metric_value in emo_dict.items():
+    #         if metric_key == 'Negative':
+    #             metric_value = f'<span style="color:red;">{metric_value}</span>'
+    #         elif metric_key == 'Positive':
+    #             metric_value = f'<span style="color:green;">{metric_value}</span>'
+    #         elif metric_key == 'Neutral':
+    #             metric_value = f'<span style="color:orange;">{metric_value}</span>'
+    #         st.markdown(f'{metric_key}: {metric_value}', unsafe_allow_html=True)
 
-    # image = Image.open('sunrise.jpg')
-    #
-    # st.image(image, caption='Sunrise by the mountains')
+    # # image = Image.open('sunrise.jpg')
+    # #
+    # # st.image(image, caption='Sunrise by the mountains')
     st.info('The polarity ranges between -1 to 1 and is a measure of average sentiment where polarity<0 signifies negative \
         sentiment and positive polarity signifies a positive sentiment')
 
