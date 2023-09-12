@@ -760,14 +760,14 @@ with tab4:
             """)
 
 with tab5:
-    select_box = st.multiselect('Choose Product', ['H', 'T', 'K'])
+    # select_box = st.multiselect('Choose Product', ['H', 'T', 'K'])
 
     # st.header('Competitive Analysis')
 
     # tab1, tab2, tab3 = st.tabs(['Sentiment Analysis','P Percentage', 'Subtopic Distribution'])
 
     # df = pd.read_csv(r'C:\Users\Arpan\Downloads\us_data_new.csv')
-    st.info('This is an analysis of customer reviews across A and 3 of its competitors.')
+    st.info('This is an analysis of customer reviews across bike segment of its competitors.')
 
     # image1 = Image.open('Oreo_logo_PNG1.png')
     # image2 = Image.open('images.png')
@@ -789,13 +789,13 @@ with tab5:
     coll3.metric("TVS", 1033)
     # col4.metric("K", 3808)
 
-    st.subheader('Mean Polarity across products')
+    st.subheader('Mean Polarity across Brands')
     oreo = pd.read_csv('oreo_polarity.csv')
     TraderJoe = pd.read_csv('TraderJoe_quarterly_keywords_full.csv')
     Lotus = pd.read_csv('lotus_quarterly_keywords_full.csv')
     Keebler = pd.read_csv('keebler_quarterly_keywords_full.csv')
 
-    scores = {'Product': ['A', 'T', 'L', 'K'],
+    scores = {'Product': ['Suzuki', 'Honda', 'TVS'],
               'Polarity Scores': [round(oreo['Oreo'].mean(), 2), round(TraderJoe['TraderJoe'].mean(), 2),
                                   round(Lotus['Lotus'].mean(), 2), round(Keebler['Keebler'].mean(), 2)]}
     scores_df = pd.DataFrame(scores)
@@ -819,14 +819,14 @@ with tab5:
     k_neg = round(len(Keebler.loc[(Keebler['Keebler'] < 0.2)]) / len(Keebler) * 100, 1)
     k_pos = round(len(Keebler.loc[(Keebler['Keebler'] > 0.4)]) / len(Keebler) * 100, 1)
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
     lst = ['Green', 'Orange', 'Red']
     with col1:
         st.subheader("A")
         emo_dict = {
-            "Positive": str(o_pos) + "%",
-            "Neutral": str(o_neu) + "%",
-            "Negative": str(o_neg) + "%"
+            "Positive": str(63.78) + "%",
+            "Neutral": str(15.75) + "%",
+            "Negative": str(20.47) + "%"
         }
         metrics = list(emo_dict.items())
 
@@ -841,11 +841,11 @@ with tab5:
             st.markdown(f'{metric_key}: {metric_value}', unsafe_allow_html=True)
 
     with col2:
-        st.subheader("T")
+        st.subheader("Honda")
         emo_dict = {
-            "Positive": str(t_pos) + "%",
-            "Neutral": str(t_neu) + "%",
-            "Negative": str(t_neg) + "%"
+            "Positive": str(80.85) + "%",
+            "Neutral": str(7.80) + "%",
+            "Negative": str(11.35) + "%"
         }
         metrics = list(emo_dict.items())
 
@@ -864,11 +864,11 @@ with tab5:
             st.markdown(f'{metric_key}: {metric_value}', unsafe_allow_html=True)
 
     with col3:
-        st.subheader("L")
+        st.subheader("TVS")
         emo_dict = {
-            "Positive": str(l_pos) + "%",
-            "Neutral": str(l_neu) + "%",
-            "Negative": str(l_neg) + "%"
+            "Positive": str(79.765) + "%",
+            "Neutral": str(13.35) + "%",
+            "Negative": str(6.87) + "%"
         }
         metrics = list(emo_dict.items())
 
