@@ -918,12 +918,12 @@ with tab5:
     col3.metric("TVS", 0.519)
     # col4.metric("K", scores['Polarity Scores'][3])
 
-    st.subheader('Sentiment Across Quarters for Products Selected')
+    # st.subheader('Sentiment Across Quarters for Products Selected')
 
-    cols = []
-    for i in select_box:
-        cols.append(i)
-    # st.bar_chart(data=oreo,x='Quarter',y='polarity')
+    # cols = []
+    # for i in select_box:
+    #     cols.append(i)
+    # # st.bar_chart(data=oreo,x='Quarter',y='polarity')
 
     # fig = px.bar(oreo, x='Quarter', y='polarity')
     # st.write(fig)
@@ -932,20 +932,20 @@ with tab5:
     # ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
     # plt.savefig("mygraph.png")
     # plt.show()
-    y_axis = ['Oreo']
-    if len(cols) == 0:
-        pass
-    else:
-        for c in cols:
-            if c == 'L':
-                oreo = oreo.merge(Lotus, on="Quarter")
-                y_axis.append('Lotus')
-            elif c == 'K':
-                oreo = oreo.merge(Keebler, on="Quarter")
-                y_axis.append('Keebler')
-            else:
-                oreo = oreo.merge(TraderJoe, on="Quarter")
-                y_axis.append('TraderJoe')
+    # y_axis = ['Oreo']
+    # if len(cols) == 0:
+    #     pass
+    # else:
+    #     for c in cols:
+    #         if c == 'L':
+    #             oreo = oreo.merge(Lotus, on="Quarter")
+    #             y_axis.append('Lotus')
+    #         elif c == 'K':
+    #             oreo = oreo.merge(Keebler, on="Quarter")
+    #             y_axis.append('Keebler')
+    #         else:
+    #             oreo = oreo.merge(TraderJoe, on="Quarter")
+    #             y_axis.append('TraderJoe')
 
     # st.write(oreo)
     # fig = px.bar(oreo, x='Quarter', y=y_axis, barmode='group')
@@ -1051,7 +1051,7 @@ with tab5:
     # # col3.metric("Lotus", st.image(image3, width=10))
     # # col4.metric("Keebler", st.image(image4, width=10))
 
-    # st.subheader('Subtopics across certain P')
+    st.subheader('Subtopics across certain P')
 
     ore = pd.read_excel('compete.xlsx', sheet_name=6)
     select_p = st.selectbox('Choose P', ['Product', 'Price', 'Promotion', 'Placement'])
