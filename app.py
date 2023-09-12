@@ -219,14 +219,14 @@ def donut_chart() -> Pie:
 
 # App title and configuration
 st.set_page_config(page_title="Automotive Analysis", layout="wide", initial_sidebar_state="expanded")
-st.title("Customer Review Analysis")
-
+st.title("Automotive Customer Review Analysis")
+st.write("Turn every review into a pit stop for improvement with our Automotive Review Analysis App – where user feedback fuels your success.")
 # Load data
 # data = pd.read_csv("products.csv")
 # clean_data(data)
 
 # Sidebar
-st.sidebar.title("Select a Product")
+st.sidebar.title("Select a Brand:")
 products = ['Suzuki','Honda','TVS']
 product = st.sidebar.selectbox("Choose a Brand", products)
 # Filter data based on selected product
