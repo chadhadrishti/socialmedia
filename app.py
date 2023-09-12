@@ -342,11 +342,11 @@ with tab2:
 
     st.subheader("Word Cloud")
     if product == 'Suzuki':
-        st.image('suzuki_wordcloud.png', use_column_width=True)
+        st.image('suzuki_wordcloud.png', width=500)
     if product == 'Honda':
-        st.image('Honda_wordcloud.png', use_column_width=True)
+        st.image('Honda_wordcloud.png', width=500)
     if product == 'TVS':
-        st.image('tvs_wordcloud.png', use_column_width=True)
+        st.image('tvs_wordcloud.png', width=500)
     # wc = create_wordcloud(text)
     # st.pyplot(plt)
 
