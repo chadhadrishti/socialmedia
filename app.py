@@ -652,53 +652,58 @@ with tab4:
         with pb1:
             # st.title("Body")
             st.write("""
-            1. There is a wide variety of topics related to product attributes, such as taste, size, shape, quality, and flavors. This suggests that customers appreciate diversity in products, and the business should continue to innovate and introduce new flavors and combinations.
-            2. The association with country of origin, culture and importance of quality is highlighted several times, emphasizing the value of maintaining and promoting the brand's origin and reputation. 
-            3. Topics related to ingredients and allergens indicate the need for clear labeling and communication of product contents to cater to diverse customer needs and preferences.
-            """)
+            - Keywords: look, feature, colour, light, awesome, smooth.
+            - Insights: 
+                1. Customers are discussing the scooter's look, color options, and design features. They appreciate features that enhance the scooter's style and appearance.
+        """)
 
         with pb2:
             # st.title("Engine")
             st.write("""
-            1. "Price and Availability" and "Inflation and Economy" suggest that customers are price-sensitive and might be affected by economic factors. The business should consider offering a range of products at various price points to cater to different customer segments.
-            2. "Great Purchase" implies that customers value deals and promotions, so the business should consider running special offers and discounts to attract and retain customers.
-            """)
+            - Keywords: engine, power, speed, mileage, performance, shift.
+            - Insights: 
+                1. Customers are sharing their experiences related to the scooter's engine performance, power, speed, and fuel efficiency. Some mention gear shift performance.
+        """)
 
         with pb3:
             # st.title("service")
             st.write("""
-            1. A variety of promotional topics are mentioned, including events, celebrations, special occasions, and holidays. This suggests that the business should align its promotional activities with these events to create more targeted and effective marketing campaigns.
-            2. Topics related to communication, engagement, and language highlight the importance of connecting with customers in a personalized and culturally relevant manner. This could involve using local languages in marketing materials and engaging with customers on social media platforms.
-            3. The interest in branding and logo, Swiss identity, and brand history implies that the brand's story and heritage play a significant role in customer perception. The company should continue to emphasize its unique selling propositions and values in its promotional materials.
-            """)
+            - Keywords: service, problem, issue, maintenance, cost.
+            - Insights: 
+                1. Customers are discussing service-related aspects, including problems, maintenance, and associated costs. They are concerned about service quality.
+        """)
 
         with pb4:
             # st.title("special feature")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+           - Keywords: feature, headlight.
+           - Insights: 
+                1. Customers are talking about special features, especially regarding headlight performance.
+        """)
 
         with pb5:
             # st.title("competition")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+            - Keywords: activa, honda, scooty, xblade.
+            - Insights: 
+                1. Customers are comparing the scooter with Honda Activa, Scooty, and Xblade in terms of various aspects.
+        """)
             
         with pb6:
             # st.title("ride experience")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+            - Keywords: ride, comfortable, feel, long, time.
+            - Insights: 
+                1. Customers are sharing their riding experiences and comfort-related feedback, including long rides.
+        """)
 
         with pb7:
             # st.title("price")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+            - Keywords: buy, purchase, cost, value, money.
+            - Insights: 
+                1. Customers are discussing the price, cost, and overall value for money when considering buying a scooter.
+        """)
             
     if product == 'TVS':
         st.subheader('Number of Topics per Key Factors for TVS')
