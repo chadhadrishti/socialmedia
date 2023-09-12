@@ -286,7 +286,7 @@ st.write(font_css, unsafe_allow_html=True)
 
 with tab1:
     
-    col11, col22, col33 = st.columns(4)
+    col11, col22, col33 = st.columns(3)
 
     st.write("")
     st.write("")
