@@ -778,7 +778,7 @@ with tab5:
     st.subheader('Total Data collected for different Brands')
     col1, col2, col3 = st.columns(3)
     
-    col1=mage('suzuki_logo.png', width=200)
+    col1.image('suzuki_logo.png', width=200)
     # col11.metric("Amazon", Amazon_count)
     col2.image('Honda_logo.png', width=200)
     # col22.metric("Wallmart", Wallmart_count)
