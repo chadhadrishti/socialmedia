@@ -798,7 +798,7 @@ with tab5:
     scores = {'Product': ['Suzuki', 'Honda', 'TVS'],
               'Polarity Scores': [round(oreo['Oreo'].mean(), 2), round(TraderJoe['TraderJoe'].mean(), 2),
                                   round(Lotus['Lotus'].mean(), 2), round(Keebler['Keebler'].mean(), 2)]}
-    scores_df = pd.DataFrame(scores)
+    # scores_df = pd.DataFrame(scores)
     # st.write(scores_df)
     st.info(
         "Percentage of Positive, Neutral and Negative feedback across different products. We have selected Positive reviews with polarity score > 0.4, Neutral reviews within 0.2 to 0.4 & Negative reviews below 0.2 (Polarity scores are calculated using machine learning for sentiment analysis on text data. It ranges between -1 to 1). ")
