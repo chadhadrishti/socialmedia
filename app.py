@@ -822,7 +822,7 @@ with tab5:
     col1, col2, col3 = st.columns(3)
     lst = ['Green', 'Orange', 'Red']
     with col1:
-        st.subheader("A")
+        st.subheader("Suzuki")
         emo_dict = {
             "Positive": str(63.78) + "%",
             "Neutral": str(15.75) + "%",
@@ -912,11 +912,11 @@ with tab5:
     st.info('The polarity ranges between -1 to 1 and is a measure of average sentiment where polarity<0 signifies negative \
         sentiment and positive polarity signifies a positive sentiment')
 
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("A", scores['Polarity Scores'][0])
-    col2.metric("T", scores['Polarity Scores'][1])
-    col3.metric("L", scores['Polarity Scores'][2])
-    col4.metric("K", scores['Polarity Scores'][3])
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Suzuki", 0.392)
+    col2.metric("Honda", 0.618)
+    col3.metric("TVS", 0.519)
+    # col4.metric("K", scores['Polarity Scores'][3])
 
     st.subheader('Sentiment Across Quarters for Products Selected')
 
@@ -948,110 +948,110 @@ with tab5:
                 y_axis.append('TraderJoe')
 
     # st.write(oreo)
-    fig = px.bar(oreo, x='Quarter', y=y_axis, barmode='group')
-    fig.update_layout(
-        autosize=False,
-        width=1000,
-        height=400,
-        title="Polarity Distribution",
-        xaxis_title="Quarter",
-        yaxis_title="Polarity Scores",
-        legend_title="Product"
-    )
-    newnames = {'Oreo': 'A', 'Keebler': 'K', 'TraderJoe': 'T', 'Lotus': 'L'}
-    fig.for_each_trace(lambda t: t.update(name=newnames[t.name],
-                                          legendgroup=newnames[t.name],
-                                          hovertemplate=t.hovertemplate.replace(t.name, newnames[t.name])
-                                          )
-                       )
-    st.write(fig)
-    # x=oreo.plot.bar()
-    # st.write(x)
+    # fig = px.bar(oreo, x='Quarter', y=y_axis, barmode='group')
+    # fig.update_layout(
+    #     autosize=False,
+    #     width=1000,
+    #     height=400,
+    #     title="Polarity Distribution",
+    #     xaxis_title="Quarter",
+    #     yaxis_title="Polarity Scores",
+    #     legend_title="Product"
+    # )
+    # newnames = {'Oreo': 'A', 'Keebler': 'K', 'TraderJoe': 'T', 'Lotus': 'L'}
+    # fig.for_each_trace(lambda t: t.update(name=newnames[t.name],
+    #                                       legendgroup=newnames[t.name],
+    #                                       hovertemplate=t.hovertemplate.replace(t.name, newnames[t.name])
+    #                                       )
+    #                    )
+    # st.write(fig)
+    # # x=oreo.plot.bar()
+    # # st.write(x)
 
-    # st.write(oreo)
-    # st.bar_chart(data=oreo, x='Quarter', y=y_axis)
-    # x=oreo.plot.bar()
-    # st.pyplot(x)
+    # # st.write(oreo)
+    # # st.bar_chart(data=oreo, x='Quarter', y=y_axis)
+    # # x=oreo.plot.bar()
+    # # st.pyplot(x)
 
-    # # Example 3
-    #
-    st.info('This is an analysis of Mix Marketing model of A and 3 of its competitors. It involves proportion of reviews \
-            related to the 4Ps namely: Product, Price, Promotion and Placement')
+    # # # Example 3
+    # #
+    # st.info('This is an analysis of Mix Marketing model of A and 3 of its competitors. It involves proportion of reviews \
+    #         related to the 4Ps namely: Product, Price, Promotion and Placement')
 
-    st.subheader('Proportions across 4Ps')
-    o = pd.read_excel('word_representation.xlsx', sheet_name=0)
-    tj = pd.read_excel('compete.xlsx', sheet_name=3)
-    lt = pd.read_excel('compete.xlsx', sheet_name=4)
-    kb = pd.read_excel('compete.xlsx', sheet_name=5)
+    # st.subheader('Proportions across 4Ps')
+    # o = pd.read_excel('word_representation.xlsx', sheet_name=0)
+    # tj = pd.read_excel('compete.xlsx', sheet_name=3)
+    # lt = pd.read_excel('compete.xlsx', sheet_name=4)
+    # kb = pd.read_excel('compete.xlsx', sheet_name=5)
 
-    dict_oreo = {'Item': 'A',
-                 'Product': float(o["4P's"].value_counts()['Product'] / o["4P's"].value_counts().sum()) * 100,
-                 'Price': float(o["4P's"].value_counts()['Price'] / o["4P's"].value_counts().sum()) * 100,
-                 'Promotion': float(o["4P's"].value_counts()['Promotion'] / o["4P's"].value_counts().sum()) * 100,
-                 'Placement': float(o["4P's"].value_counts()['Placement'] / o["4P's"].value_counts().sum()) * 100}
-    df = pd.DataFrame(dict_oreo, index=[0])
-    x = ['Product', 'Price', 'Promotion', 'Placement']
-    data = []
-    data.append(go.Bar(name='A', x=x, y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
-                                         df.loc[len(df.index) - 1]['Promotion'],
-                                         df.loc[len(df.index) - 1]['Placement']]))
-    if len(cols) == 0:
-        pass
-    else:
-        for c in cols:
-            if c == 'L':
-                df.loc[len(df.index)] = ['L', float(lt.nunique()['Product'] / lt.nunique().sum()) * 100,
-                                         float(lt.nunique()['Price'] / lt.nunique().sum()) * 100,
-                                         float(lt.nunique()['Promotion'] / lt.nunique().sum()) * 100,
-                                         float(lt.nunique()['Placement'] / lt.nunique().sum()) * 100]
-                a = go.Bar(name='L', x=x,
-                           y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
-                              df.loc[len(df.index) - 1]['Promotion'], df.loc[len(df.index) - 1]['Placement']])
-                data.append(a)
-            elif c == 'K':
-                df.loc[len(df.index)] = ['K', float(kb.nunique()['Product'] / kb.nunique().sum()) * 100,
-                                         float(kb.nunique()['Price'] / kb.nunique().sum()) * 100,
-                                         float(kb.nunique()['Promotion'] / kb.nunique().sum()) * 100,
-                                         float(kb.nunique()['Placement'] / kb.nunique().sum()) * 100]
-                b = go.Bar(name='K', x=x,
-                           y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
-                              df.loc[len(df.index) - 1]['Promotion'], df.loc[len(df.index) - 1]['Placement']])
-                data.append(b)
-            else:
-                df.loc[len(df.index)] = ['T', float(tj.nunique()['Product'] / tj.nunique().sum()) * 100,
-                                         float(tj.nunique()['Price'] / tj.nunique().sum()) * 100,
-                                         float(tj.nunique()['Promotion'] / tj.nunique().sum()) * 100,
-                                         float(tj.nunique()['Placement'] / tj.nunique().sum()) * 100]
-                c = go.Bar(name='T', x=x,
-                           y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
-                              df.loc[len(df.index) - 1]['Promotion'],
-                              df.loc[len(df.index) - 1]['Placement']])
-                data.append(c)
-    # st.write(df)
-    # st.write(data)
-    fig = go.Figure(data)
-    fig.update_layout(barmode='group', yaxis_range=[0, 100])
-    fig.update_layout(
-        autosize=False,
-        width=1000,
-        height=400,
-        title="Proportion of P's",
-        yaxis_title="Percentage Share",
-        legend_title="Product"
-    )
-    st.plotly_chart(fig)
+    # dict_oreo = {'Item': 'A',
+    #              'Product': float(o["4P's"].value_counts()['Product'] / o["4P's"].value_counts().sum()) * 100,
+    #              'Price': float(o["4P's"].value_counts()['Price'] / o["4P's"].value_counts().sum()) * 100,
+    #              'Promotion': float(o["4P's"].value_counts()['Promotion'] / o["4P's"].value_counts().sum()) * 100,
+    #              'Placement': float(o["4P's"].value_counts()['Placement'] / o["4P's"].value_counts().sum()) * 100}
+    # df = pd.DataFrame(dict_oreo, index=[0])
+    # x = ['Product', 'Price', 'Promotion', 'Placement']
+    # data = []
+    # data.append(go.Bar(name='A', x=x, y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
+    #                                      df.loc[len(df.index) - 1]['Promotion'],
+    #                                      df.loc[len(df.index) - 1]['Placement']]))
+    # if len(cols) == 0:
+    #     pass
+    # else:
+    #     for c in cols:
+    #         if c == 'L':
+    #             df.loc[len(df.index)] = ['L', float(lt.nunique()['Product'] / lt.nunique().sum()) * 100,
+    #                                      float(lt.nunique()['Price'] / lt.nunique().sum()) * 100,
+    #                                      float(lt.nunique()['Promotion'] / lt.nunique().sum()) * 100,
+    #                                      float(lt.nunique()['Placement'] / lt.nunique().sum()) * 100]
+    #             a = go.Bar(name='L', x=x,
+    #                        y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
+    #                           df.loc[len(df.index) - 1]['Promotion'], df.loc[len(df.index) - 1]['Placement']])
+    #             data.append(a)
+    #         elif c == 'K':
+    #             df.loc[len(df.index)] = ['K', float(kb.nunique()['Product'] / kb.nunique().sum()) * 100,
+    #                                      float(kb.nunique()['Price'] / kb.nunique().sum()) * 100,
+    #                                      float(kb.nunique()['Promotion'] / kb.nunique().sum()) * 100,
+    #                                      float(kb.nunique()['Placement'] / kb.nunique().sum()) * 100]
+    #             b = go.Bar(name='K', x=x,
+    #                        y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
+    #                           df.loc[len(df.index) - 1]['Promotion'], df.loc[len(df.index) - 1]['Placement']])
+    #             data.append(b)
+    #         else:
+    #             df.loc[len(df.index)] = ['T', float(tj.nunique()['Product'] / tj.nunique().sum()) * 100,
+    #                                      float(tj.nunique()['Price'] / tj.nunique().sum()) * 100,
+    #                                      float(tj.nunique()['Promotion'] / tj.nunique().sum()) * 100,
+    #                                      float(tj.nunique()['Placement'] / tj.nunique().sum()) * 100]
+    #             c = go.Bar(name='T', x=x,
+    #                        y=[df.loc[len(df.index) - 1]['Product'], df.loc[len(df.index) - 1]['Price'],
+    #                           df.loc[len(df.index) - 1]['Promotion'],
+    #                           df.loc[len(df.index) - 1]['Placement']])
+    #             data.append(c)
+    # # st.write(df)
+    # # st.write(data)
+    # fig = go.Figure(data)
+    # fig.update_layout(barmode='group', yaxis_range=[0, 100])
+    # fig.update_layout(
+    #     autosize=False,
+    #     width=1000,
+    #     height=400,
+    #     title="Proportion of P's",
+    #     yaxis_title="Percentage Share",
+    #     legend_title="Product"
+    # )
+    # st.plotly_chart(fig)
 
-    st.info('This analyses different subtopics present across the 4Ps among A and its competitors.')
+    # st.info('This analyses different subtopics present across the 4Ps among A and its competitors.')
 
-    # a1 = pd.read_csv('all_oreo_data.csv')
+    # # a1 = pd.read_csv('all_oreo_data.csv')
 
-    # col1, col2, col3, col4 = st.columns(4)
-    # col1.metric("Oreo", st.image(image1, width=10))
-    # col2.metric("TraderJoe", st.image(image2, width=10))
-    # col3.metric("Lotus", st.image(image3, width=10))
-    # col4.metric("Keebler", st.image(image4, width=10))
+    # # col1, col2, col3, col4 = st.columns(4)
+    # # col1.metric("Oreo", st.image(image1, width=10))
+    # # col2.metric("TraderJoe", st.image(image2, width=10))
+    # # col3.metric("Lotus", st.image(image3, width=10))
+    # # col4.metric("Keebler", st.image(image4, width=10))
 
-    st.subheader('Subtopics across certain P')
+    # st.subheader('Subtopics across certain P')
 
     ore = pd.read_excel('compete.xlsx', sheet_name=6)
     select_p = st.selectbox('Choose P', ['Product', 'Price', 'Promotion', 'Placement'])
