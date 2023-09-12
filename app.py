@@ -563,53 +563,68 @@ with tab4:
         with pb1:
             # st.title("Body")
             st.write("""
-            1. There is a wide variety of topics related to product attributes, such as taste, size, shape, quality, and flavors. This suggests that customers appreciate diversity in products, and the business should continue to innovate and introduce new flavors and combinations.
-            2. The association with country of origin, culture and importance of quality is highlighted several times, emphasizing the value of maintaining and promoting the brand's origin and reputation. 
-            3. Topics related to ingredients and allergens indicate the need for clear labeling and communication of product contents to cater to diverse customer needs and preferences.
+            - Keywords: grip, shock, sound, appeal, quality, body, space, small, helmet, look, light, head, chrome, colour.
+            - Insights:
+                1. Customers are concerned about the grip of the scooter's tires and the shock absorption.
+                2. Aesthetic factors such as appeal, quality, and looks play a significant role in the scooter's choice.
+                3. Space and design, including small details like helmet hooks and lighting, are important to buyers.
             """)
 
         with pb2:
             # st.title("Engine")
             st.write("""
-            1. "Price and Availability" and "Inflation and Economy" suggest that customers are price-sensitive and might be affected by economic factors. The business should consider offering a range of products at various price points to cater to different customer segments.
-            2. "Great Purchase" implies that customers value deals and promotions, so the business should consider running special offers and discounts to attract and retain customers.
+           - Keywords: speed, engine, performance, power, cc, tank, consumption, mileage, pickup, speedometer, weight, handle.
+           - Insights:
+               1. Performance-related factors like speed, engine power, and fuel efficiency are essential considerations.
+               2. Mileage, pickup, and handling are significant aspects of the scooter's performance.
+               3. Engine specifications such as cc, tank capacity, and fuel consumption are mentioned.
             """)
 
         with pb3:
             # st.title("service")
             st.write("""
-            1. A variety of promotional topics are mentioned, including events, celebrations, special occasions, and holidays. This suggests that the business should align its promotional activities with these events to create more targeted and effective marketing campaigns.
-            2. Topics related to communication, engagement, and language highlight the importance of connecting with customers in a personalized and culturally relevant manner. This could involve using local languages in marketing materials and engaging with customers on social media platforms.
-            3. The interest in branding and logo, Swiss identity, and brand history implies that the brand's story and heritage play a significant role in customer perception. The company should continue to emphasize its unique selling propositions and values in its promotional materials.
+            - Keywords: service, part, center, oil, servicing, spare, problem, issue, battery, problem, kms, face, review, company.
+            - Insights:
+                1. Customers are concerned about the scooter's maintenance and service requirements.
+                2. Availability of spare parts, servicing centers, and addressing issues are important considerations.
+                3. Mileage and performance issues are discussed in the context of service and maintenance.
             """)
 
         with pb4:
             # st.title("special feature")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            - Keywords: special, edition, key, cover, open, lock, digital meter, make, new, model, india.
+            - Insights:
+            1. Customers are interested in special editions and new features like digital meters and keyless entry.
+            2. The availability of unique features can influence purchasing decisions.
             """)
 
         with pb5:
             # st.title("competition")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            - Keywords: vehicle, dealer, purchase, compare, access, honda, suzuki, friend, activa, scooty, company, activa, inda.
+            - Insights:
+                1. Customers often compare different scooter models, including Honda Activa, Suzuki Access, and others.
+                2. Recommendations from friends and the reputation of the company are mentioned in the context of competition.
             """)
             
         with pb6:
             # st.title("ride experience")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
+            - Keywords: ride, comfortable, comfort, seat, long, space, drive, sit, feel, test, people, smooth.
+            - Insights:
+                1. Comfort during rides, including seat comfort and spaciousness, is crucial to buyers.
+                2. Test rides and user experiences play a significant role in evaluating comfort.
+                3. The smoothness of the ride is an important factor.
             """)
 
         with pb7:
             # st.title("price")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+            - Keywords: buy, purchase, price, cost.
+            - Insights:
+                1. Pricing and affordability are essential considerations for potential buyers.
+                2. The cost of purchasing the scooter is a key decision-making factor.""")
 
     if product == 'Honda':
         st.subheader('Number of Topics per Key Factors for Honda')
