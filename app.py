@@ -731,53 +731,60 @@ with tab4:
         with pb1:
             # st.title("Body")
             st.write("""
-            1. There is a wide variety of topics related to product attributes, such as taste, size, shape, quality, and flavors. This suggests that customers appreciate diversity in products, and the business should continue to innovate and introduce new flavors and combinations.
-            2. The association with country of origin, culture and importance of quality is highlighted several times, emphasizing the value of maintaining and promoting the brand's origin and reputation. 
-            3. Topics related to ingredients and allergens indicate the need for clear labeling and communication of product contents to cater to diverse customer needs and preferences.
-            """)
+            - Keywords: Look, style, design, nice, comfortable, new
+            - Insights: 
+                1. Customers frequently comment on the scooter's appearance, highlighting its nice design and comfortable style. Many find it visually appealing and consider it a new and attractive option in terms of style.
+        """)
 
         with pb2:
             # st.title("Engine")
             st.write("""
-            1. "Price and Availability" and "Inflation and Economy" suggest that customers are price-sensitive and might be affected by economic factors. The business should consider offering a range of products at various price points to cater to different customer segments.
-            2. "Great Purchase" implies that customers value deals and promotions, so the business should consider running special offers and discounts to attract and retain customers.
-            """)
+            - Keywords: Power, speed, engine, performance, pickup, mileage
+            - Insights: 
+                1. Customers focus on the scooter's performance attributes, emphasizing factors like power, speed, engine performance, and pickup. Mileage is also discussed, indicating an interest in fuel efficiency.
+        """)
 
         with pb3:
             # st.title("service")
             st.write("""
-            1. A variety of promotional topics are mentioned, including events, celebrations, special occasions, and holidays. This suggests that the business should align its promotional activities with these events to create more targeted and effective marketing campaigns.
-            2. Topics related to communication, engagement, and language highlight the importance of connecting with customers in a personalized and culturally relevant manner. This could involve using local languages in marketing materials and engaging with customers on social media platforms.
-            3. The interest in branding and logo, Swiss identity, and brand history implies that the brand's story and heritage play a significant role in customer perception. The company should continue to emphasize its unique selling propositions and values in its promotional materials.
-            """)
+            - Keywords: Service, maintenance, problem, issue
+            - Insights: 
+                1. Customers share their experiences with the scooter's service and maintenance. They discuss any problems or issues they've encountered, providing feedback on the scooter's reliability and after-sales service.
+        """)
 
         with pb4:
             # st.title("special feature")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+            - Keywords: Feature, awesome, great, useful
+            - Insights: 
+                1. Customers appreciate unique features in the scooter and describe them as awesome and great. They value features that enhance their riding experience, emphasizing their usefulness.
+        """)
 
         with pb5:
             # st.title("competition")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+            - Keywords: Jupiter, TVS, segment, class, braking
+            - Insights: 
+                1. Customers compare the scooter to competitors like Jupiter and other TVS models. They evaluate its performance and class in relation to these competitors and mention considerations like braking.
+        """)
             
         with pb6:
             # st.title("ride experience")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+           - Keywords: Comfortable, smooth, cost, light
+           - Insights: 
+               1. Customers focus on the riding experience, emphasizing comfort and smoothness. They also discuss cost-related aspects and the scooter's lightweight nature.
+        """)
 
         with pb7:
             # st.title("price")
             st.write("""
-            1. International topics, such as "European Market," "International Love," and "International Availability," indicate the potential for expanding the brand's global presence and catering to the needs of different markets.
-            2. Topics like "Shipping and Delivery" and "Product Availability" underscore the importance of efficient distribution channels and making products easily accessible to customers.
-            """)
+            - Keywords: Price, value, money, buying, purchase
+            - Insights: 
+                1. Customers discuss the scooter's price, value for money, and their buying experiences. They evaluate whether the scooter is a worthwhile purchase.
+            - Additional Insights:
+                1. This category includes various keywords and insights that don't fit into the predefined categories. These insights cover a range of topics, including specific scooter models (e.g., "Apache," "RR"), mentions of "excellent" features, and discussions about "smooth" rides. These insights provide additional context and feedback from customers.
+        """)
 
 with tab5:
     # select_box = st.multiselect('Choose Product', ['H', 'T', 'K'])
