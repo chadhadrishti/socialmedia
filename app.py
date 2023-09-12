@@ -945,7 +945,10 @@ with tab5:
     col3.metric("TVS", 0.519)
     # col4.metric("K", scores['Polarity Scores'][3])
 
-    # st.subheader('Sentiment Across Quarters for Products Selected')
+    st.subheader('Subtopics Across different Brands')
+    # Display raw data
+    ab = pd.read_csv('Subtopics_Automotive.csv')
+    st.dataframe(ab.head(100))
 
     # cols = []
     # for i in select_box:
