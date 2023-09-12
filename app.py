@@ -310,6 +310,12 @@ with tab1:
         For example, if a business receives numerous customer reviews, the topic modeling algorithm would identify words that commonly co-occur and form topics based on these patterns. This could reveal topics like product quality, customer service, or pricing.
         """
     )
+    st.subheader("NLP - Natural Language Processing")
+    st.info(
+        """
+        Natural Language Processing (NLP) is a subfield of artificial intelligence (AI) that focuses on the interaction between computers and human language. Its primary goal is to enable computers to understand, interpret, and generate human language in a valuable way. NLP combines techniques from computer science, linguistics, and machine learning to process and analyze text and speech data.
+        """
+    )
 
 
 with tab2:
