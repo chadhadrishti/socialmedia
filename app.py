@@ -299,7 +299,7 @@ with tab1:
     # col33.metric("Target", Target_count)
     # col44.image('twitter.png', width=50)
     # col44.metric("Twitter", Twitter_count)
-    st.image('approach1.png', use_column_width=True)
+    st.image('Approach.png', use_column_width=True)
 
     st.header('Machine Learning Techniques Used:')
     st.subheader("Topic Modeling")
