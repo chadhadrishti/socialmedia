@@ -966,6 +966,21 @@ with tab5:
     col1.image('Key_Factor0.png',width=500)
     # col11.metric("Amazon", Amazon_count)
     col2.image('Key_Factor1.png',width=500)
+    coll1, coll2 = st.columns(2)
+    
+    coll1.image('Key_Factor2.png',width=500)
+    # col11.metric("Amazon", Amazon_count)
+    coll2.image('Key_Factor3.png',width=500)
+    colll1, colll2 = st.columns(2)
+    
+    colll1.image('Key_Factor4.png',width=500)
+    # col11.metric("Amazon", Amazon_count)
+    colll2.image('Key_Factor5.png',width=500)
+    collll1, collll2 = st.columns(2)
+    
+    collll1.image('Key_Factor6.png',width=500)
+    # col11.metric("Amazon", Amazon_count)
+    collll2.image('Key_Factor7.png',width=500)
     # col22.metric("Wallmart", Wallmart_count)
     # col3.image('Key_Factor2.png', width=300)
     # col4.image('Key_Factor3.png', width=200)
