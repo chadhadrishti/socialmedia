@@ -302,17 +302,17 @@ with tab1:
     col19, col20, col21 = st.columns(3)
     col19.info(
         """
-        Suzuki Motor Corporation is a Japanese multinational mobility manufacturer headquartered in Hamamatsu, Shizuoka. It manufactures automobiles, motorcycles, all-terrain vehicles, outboard marine engines, wheelchairs and a variety of other small internal combustion engines. 
+        Suzuki, a stalwart in the motorcycle industry, crafts bikes that blend style and performance seamlessly. Their lineup includes the iconic GSX-R sportbikes, perfect for adrenaline junkies, and the V-Strom adventure bikes for long-haul journeys. Suzuki's innovative technology, like the Suzuki Dual Throttle Valve and advanced ABS, ensures a thrilling yet safe riding experience.
         """
     )
     col20.info(
         """
-        Honda Motor Co. is a Japanese public multinational conglomerate manufacturer of automobiles, motorcycles, & power equipment, headquartered in Minato, Japan. Honda has been the world's largest motorcycle manufacturer since 1959, reaching a production of 400M by the end of 2019.
+        Honda, a symbol of reliability, offers an extensive range of motorcycles, catering to diverse rider needs. From the nimble and economical Honda CB series for urban commuters to the legendary CBR sportbikes for track enthusiasts, Honda's lineup is comprehensive. Their commitment to quality and innovation shines through with features like Honda Selectable Torque Control and fuel-efficient engines.
         """
     )
     col21.info(
         """
-        TVS Motor Company is an Indian multinational motorcycle manufacturer headquartered in Chennai. It is the third-largest motorcycle company in India in terms of revenue. The company has annual sales of three million units and an annual production capacity of over four million vehicles.
+       TVS Motor Company, known for its innovation, delivers motorcycles with a blend of style and performance. The TVS Apache series is celebrated for its sporty design and race-inspired technology. TVS also excels in the commuter segment with offerings like the TVS Jupiter, known for its reliability and features. With a focus on cutting-edge technology, TVS ensures an exhilarating ride.
         """
     )
     st.image('Approach.png', use_column_width=True)
