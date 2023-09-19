@@ -299,6 +299,22 @@ with tab1:
     # col33.metric("Target", Target_count)
     # col44.image('twitter.png', width=50)
     # col44.metric("Twitter", Twitter_count)
+    col19, col20, col21 = st.columns(3)
+    col19.info(
+        """
+        Suzuki Motor Corporation is a Japanese multinational mobility manufacturer headquartered in Hamamatsu, Shizuoka. It manufactures automobiles, motorcycles, all-terrain vehicles, outboard marine engines, wheelchairs and a variety of other small internal combustion engines. 
+        """
+    )
+    col20.info(
+        """
+        Suzuki Motor Corporation is a Japanese multinational mobility manufacturer headquartered in Hamamatsu, Shizuoka. It manufactures automobiles, motorcycles, all-terrain vehicles, outboard marine engines, wheelchairs and a variety of other small internal combustion engines. 
+        """
+    )
+    col21.info(
+        """
+        Suzuki Motor Corporation is a Japanese multinational mobility manufacturer headquartered in Hamamatsu, Shizuoka. It manufactures automobiles, motorcycles, all-terrain vehicles, outboard marine engines, wheelchairs and a variety of other small internal combustion engines. 
+        """
+    )
     st.image('Approach.png', use_column_width=True)
 
     st.header('Machine Learning Techniques Used:')
