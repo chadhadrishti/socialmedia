@@ -961,7 +961,7 @@ with tab5:
     # col4.metric("K", scores['Polarity Scores'][3])
 
     st.subheader('Polarity across different Subtopics')
-    col1, col2, col3 = st.columns(2)
+    col1, col2 = st.columns(2)
     
     col1.image('Key_Factor0.png',width=400)
     # col11.metric("Amazon", Amazon_count)
