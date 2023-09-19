@@ -961,13 +961,13 @@ with tab5:
     # col4.metric("K", scores['Polarity Scores'][3])
 
     st.subheader('Polarity across different Subtopics')
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(2)
     
-    col1.image('Key_Factor0.png',width=300)
+    col1.image('Key_Factor0.png',width=400)
     # col11.metric("Amazon", Amazon_count)
-    col2.image('Key_Factor1.png',width=300)
+    col2.image('Key_Factor1.png',width=400)
     # col22.metric("Wallmart", Wallmart_count)
-    col3.image('Key_Factor2.png', width=300)
+    # col3.image('Key_Factor2.png', width=300)
     # col4.image('Key_Factor3.png', width=200)
     # coll1, coll2, coll3 = st.columns(3)
     # coll1.metric("Suzuki", 7385)
