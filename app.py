@@ -307,7 +307,7 @@ with tab1:
     )
     col20.info(
         """
-        Honda Motor Co., Ltd. is a Japanese public multinational conglomerate manufacturer of automobiles, motorcycles, and power equipment, headquartered in Minato, Tokyo, Japan. Honda has been the world's largest motorcycle manufacturer since 1959, reaching a production of 400 million by the end of 2019.
+        Honda Motor Co. is a Japanese public multinational conglomerate manufacturer of automobiles, motorcycles, & power equipment, headquartered in Minato, Japan. Honda has been the world's largest motorcycle manufacturer since 1959, reaching a production of 400M by the end of 2019.
         """
     )
     col21.info(
