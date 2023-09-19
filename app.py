@@ -952,8 +952,8 @@ with tab5:
     # # image = Image.open('sunrise.jpg')
     # #
     # # st.image(image, caption='Sunrise by the mountains')
-    st.info('The polarity ranges between -1 to 1 and is a measure of average sentiment where polarity<0 signifies negative \
-        sentiment and positive polarity signifies a positive sentiment')
+    # st.info('The polarity ranges between -1 to 1 and is a measure of average sentiment where polarity<0 signifies negative \
+    #     sentiment and positive polarity signifies a positive sentiment')
 
     col1, col2, col3 = st.columns(3)
     col1.metric("Suzuki", 0.392)
