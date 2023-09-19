@@ -984,7 +984,7 @@ with tab5:
     collll1.metric("Ride Experience/Comfortability","")
     collll1.image('Key_Factor6.png',width=500)
     # col11.metric("Amazon", Amazon_count)
-    collll1.metric("Price, Cost, Buying","")
+    collll2.metric("Price, Cost, Buying","")
     collll2.image('Key_Factor7.png',width=500)
     # col22.metric("Wallmart", Wallmart_count)
     # col3.image('Key_Factor2.png', width=300)
