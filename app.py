@@ -960,10 +960,22 @@ with tab5:
     col3.metric("TVS", 0.519)
     # col4.metric("K", scores['Polarity Scores'][3])
 
-    st.subheader('Subtopics Across different Brands')
+    st.subheader('Polarity across different Subtopics')
+    col1, col2, col3, col4 = st.columns(4)
+    
+    col1.image('Key_Factor0.png',width=200)
+    # col11.metric("Amazon", Amazon_count)
+    col2.image('Key_Factor1.png',width=200)
+    # col22.metric("Wallmart", Wallmart_count)
+    col3.image('Key_Factor2.png', width=200)
+    col4.image('Key_Factor3.png', width=200)
+    # coll1, coll2, coll3 = st.columns(3)
+    # coll1.metric("Suzuki", 7385)
+    # coll2.metric("Honda", 1846)
+    # coll3.metric("TVS", 1033)
     # Display raw data
-    ab = pd.read_csv('Subtopics_Automotive.csv')
-    st.dataframe(ab.head(100))
+    # ab = pd.read_csv('Subtopics_Automotive.csv')
+    # st.dataframe(ab.head(100))
 
     # cols = []
     # for i in select_box:
