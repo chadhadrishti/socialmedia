@@ -315,7 +315,7 @@ with tab1:
        TVS Motor Company, known for its innovation, delivers motorcycles with a blend of style and performance. The TVS Apache series is celebrated for its sporty design and race-inspired technology. TVS also excels in the commuter segment with offerings like the TVS Jupiter, known for its reliability and features. With a focus on cutting-edge technology, TVS ensures an exhilarating ride.
         """
     )
-    st.image('Approach.png', use_column_width=True)
+    st.image('Approach-removebg-preview (1).png', use_column_width=True)
 
     st.header('Machine Learning Techniques Used:')
     st.subheader("Topic Modeling")
