@@ -307,12 +307,12 @@ with tab1:
     )
     col20.info(
         """
-        Suzuki Motor Corporation is a Japanese multinational mobility manufacturer headquartered in Hamamatsu, Shizuoka. It manufactures automobiles, motorcycles, all-terrain vehicles, outboard marine engines, wheelchairs and a variety of other small internal combustion engines. 
+        Honda Motor Co., Ltd. is a Japanese public multinational conglomerate manufacturer of automobiles, motorcycles, and power equipment, headquartered in Minato, Tokyo, Japan. Honda has been the world's largest motorcycle manufacturer since 1959, reaching a production of 400 million by the end of 2019.
         """
     )
     col21.info(
         """
-        Suzuki Motor Corporation is a Japanese multinational mobility manufacturer headquartered in Hamamatsu, Shizuoka. It manufactures automobiles, motorcycles, all-terrain vehicles, outboard marine engines, wheelchairs and a variety of other small internal combustion engines. 
+        TVS Motor Company is an Indian multinational motorcycle manufacturer headquartered in Chennai. It is the third-largest motorcycle company in India in terms of revenue. The company has annual sales of three million units and an annual production capacity of over four million vehicles.
         """
     )
     st.image('Approach.png', use_column_width=True)
