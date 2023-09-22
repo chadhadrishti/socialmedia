@@ -13,3 +13,4 @@ Chroma==0.2.0
 openai==0.10.2
 langchain==0.0.232
 streamlit-chat==0.0.2.2
+streamlit-on-Hover-tabs =0.0.2
