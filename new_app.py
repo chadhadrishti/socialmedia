@@ -1,4 +1,4 @@
-from streamlit-on-Hover-tabs import on_hover_tabs
+from streamlit_on_Hover_tabs import on_hover_tabs
 import streamlit as st
 st.set_page_config(layout="wide")
 
