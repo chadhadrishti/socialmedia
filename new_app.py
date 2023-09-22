@@ -22,7 +22,9 @@ elif tabs == 'Economy':
     st.title("Tom")
     st.write('Name of option is {}'.format(tabs))
 with st.sidebar:
-tabs = on_hover_tabs(tabName=['Dashboard', 'Money', 'Economy'], 
+
+with st.sidebar:
+        tabs = on_hover_tabs(tabName=['Dashboard', 'Money', 'Economy'], 
                              iconName=['dashboard', 'money', 'economy'],
                              styles = {'navtab': {'background-color':'#111',
                                                   'color': '#818181',
