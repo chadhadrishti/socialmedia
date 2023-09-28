@@ -414,7 +414,7 @@ with tab3:
     st.subheader("Extracted SubTopics and Topics")
     if product == 'Suzuki':
         product_b = pd.read_csv('Suzuki_subtopic_topic.csv')
-        product_b = product_b[['Subtopic','Count']]
+        # product_b = product_b[['Subtopic','Count']]
         st.dataframe(product_b)
 
     if product == 'Honda':
